@@ -45,7 +45,7 @@ add_definitions(${LLVM_DEFINITIONS_LIST})
 #
 set(CMAKE_BUILD_TYPE Release)
 set(CMAKE_INSTALL_PREFIX ${CMAKE_SOURCE_DIR}/build)
-
+set(CUDA_TOOLKIT_ROOT_DIR /usr/include)
 
 
 # Source files.
