@@ -1,0 +1,3 @@
+/home/rocm-user/project/HIP_example/HIP-Examples/openmp-helloworld/build/CMakeFiles/test_openmp_helloworld.dir
+/home/rocm-user/project/HIP_example/HIP-Examples/openmp-helloworld/build/CMakeFiles/edit_cache.dir
+/home/rocm-user/project/HIP_example/HIP-Examples/openmp-helloworld/build/CMakeFiles/rebuild_cache.dir

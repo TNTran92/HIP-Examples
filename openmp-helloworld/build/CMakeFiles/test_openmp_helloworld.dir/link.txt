@@ -1,0 +1,1 @@
+/opt/rocm-6.0.2/bin/hipcc -O3 -DNDEBUG CMakeFiles/test_openmp_helloworld.dir/openmp_helloworld.cpp.o -o test_openmp_helloworld  -Wl,-rpath,/opt/rocm-6.0.2/lib -fopenmp /opt/rocm-6.0.2/lib/libamdhip64.so.6.0.60002 --hip-link 
