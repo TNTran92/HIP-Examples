@@ -33,8 +33,10 @@ set(CMAKE_BUILD_TYPE Release)
 
 # Source files.
 set(CPP_SOURCES ${CMAKE_SOURCE_DIR}/openmp_helloworld.cpp)
+message("CMAKE_SOURCE_DIR: " ${CMAKE_SOURCE_DIR})
 
 # Preparing the executable.
+#Add an executable target called "test_openmp_helloworld" to be built from the source files listed in the command invocation.
 add_executable(test_openmp_helloworld ${CPP_SOURCES})
 
 # Link Libraries - HIP Device and OpenMP.
