@@ -26,30 +26,30 @@
 #define NUM_BLOCK 4096
 
 
-// source: https://stackoverflow.com/questions/17399119/how-do-i-use-atomicmax-on-floating-point-values-in-cuda
-__device__ float atomicMax(float* address, float val) {
-  int* address_as_i = reinterpret_cast<int*>(address);
-  int old = *address_as_i, assumed;
-  do {
-    assumed = old;
-    old = atomicCAS(
-        reinterpret_cast<int*>(address), assumed,
-        __float_as_int(fmaxf(val, __int_as_float(assumed))));
-  } while (assumed != old);
-  return __int_as_float(old);
-}
-
-__device__ float atomicMin(float* address, float val) {
-  int* address_as_i = reinterpret_cast<int*>(address);
-  int old = *address_as_i, assumed;
-  do {
-    assumed = old;
-    old = atomicCAS(
-        reinterpret_cast<int*>(address), assumed,
-        __float_as_int(fminf(val, __int_as_float(assumed))));
-  } while (assumed != old);
-  return __int_as_float(old);
-}
+//source: https://stackoverflow.com/questions/17399119/how-do-i-use-atomicmax-on-floating-point-values-in-cuda
+//__device__ float atomicMax(float* address, float val) {
+//  int* address_as_i = reinterpret_cast<int*>(address);
+//  int old = *address_as_i, assumed;
+//  do {
+//    assumed = old;
+//    old = atomicCAS(
+//        reinterpret_cast<int*>(address), assumed,
+//        __float_as_int(fmaxf(val, __int_as_float(assumed))));
+//  } while (assumed != old);
+//  return __int_as_float(old);
+//}
+//
+//__device__ float atomicMin(float* address, float val) {
+//  int* address_as_i = reinterpret_cast<int*>(address);
+//  int old = *address_as_i, assumed;
+//  do {
+//    assumed = old;
+//    old = atomicCAS(
+//        reinterpret_cast<int*>(address), assumed,
+//        __float_as_int(fminf(val, __int_as_float(assumed))));
+//  } while (assumed != old);
+//  return __int_as_float(old);
+//}
 
 
 __device__ float dDequantizeFP4(unsigned char val, float absmax)

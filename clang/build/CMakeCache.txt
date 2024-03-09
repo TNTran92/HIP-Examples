@@ -239,9 +239,6 @@ hip_DIR:PATH=/opt/rocm-6.0.2/lib/cmake/hip
 //The directory containing a CMake configuration file for hsa-runtime64.
 hsa-runtime64_DIR:PATH=/opt/rocm-6.0.2/lib/cmake/hsa-runtime64
 
-//The directory containing a CMake configuration file for rocPRIM.
-rocPRIM_DIR:PATH=/opt/rocm-6.0.2/lib/cmake/rocprim
-
 //The directory containing a CMake configuration file for rocThrust.
 rocThrust_DIR:PATH=/opt/rocm-6.0.2/lib/cmake/rocthrust
 
