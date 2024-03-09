@@ -1,0 +1,3 @@
+/home/rocm-user/project/HIP_example/HIP-Examples/clang/build/CMakeFiles/test_clang.dir
+/home/rocm-user/project/HIP_example/HIP-Examples/clang/build/CMakeFiles/edit_cache.dir
+/home/rocm-user/project/HIP_example/HIP-Examples/clang/build/CMakeFiles/rebuild_cache.dir

@@ -5,18 +5,20 @@
 // LICENSE file in the root directory of this source tree.
 
 #include "kernels.hip.h"
-#include <hipcub/block/block_radix_sort.cuh>
-#include <hipcub/warp/warp_reduce.cuh>
-#include <hipcub/block/block_load.cuh>
-#include <hipcub/block/block_discontinuity.cuh>
-#include <hipcub/block/block_store.cuh>
-#include <hipcub/block/block_reduce.cuh>
+#include <hipcub/block/block_radix_sort.hpp>
+#include <hipcub/warp/warp_reduce.hpp>
+#include <hipcub/block/block_load.hpp>
+#include <hipcub/block/block_discontinuity.hpp>
+#include <hipcub/block/block_store.hpp>
+#include <hipcub/block/block_reduce.hpp>
 #include <hipcub/hipcub.hpp>
-#include <math_constants.h>
+#include <hip/hip_math_constants.h>
 #include <thrust/host_vector.h>
 #include <thrust/device_vector.h>
-#include <mma.h>
 
+# see https://github.com/ROCm/composable_kernel
+//#include <mma.h>
+#include <rocwmma/wmma.hpp>
 
 #define HLF_MAX 65504
 #define TH 1024

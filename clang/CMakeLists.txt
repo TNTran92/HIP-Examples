@@ -49,5 +49,5 @@ add_executable(test_clang ${CPP_SOURCES})
 
 # Link Libraries - HIP Device and OpenMP.
 #target_compile_options(test_vector_add PRIVATE ${OpenMP_CXX_FLAGS})
-target_include_directories(test_clang PRIVATE /opt/rocm-6.0.2/include/hipblas /opt/rocm-6.0.2/include/hipblaslt /opt/rocm-6.0.2/include/hipsparse /opt/rocm-6.0.2/include/hipcub)
+target_include_directories(test_clang PRIVATE ${CMAKE_SOURCE_DIR} /opt/rocm-6.0.2/include/hipblas /opt/rocm-6.0.2/include/hipblaslt /opt/rocm-6.0.2/include/hipsparse /opt/rocm-6.0.2/include/hipcub /opt/rocm-6.0.2/include/rocwmaa)
 target_link_libraries(test_clang PRIVATE hip::device)
