@@ -17,6 +17,13 @@ list(APPEND HIP_PATH /opt/rocm-6.0.2/llvm/bin/)
 # to select the AMDGPU archs to compile for.
 # ex. set(AMDGPU_TARGETS "gfx803;gfx900;gfx906")
 find_package(hip REQUIRED)
+find_package(rocThrust REQUIRED)
+find_package(rocPRIM REQUIRED)
+find_package(MIOpen REQUIRED)
+#find_package(hipblas REQUIRED)
+#find_package(hipblaslt REQUIRED)
+#43find_package(rocSPARSE REQUIRED)
+
 
 # Find OpenMP.
 #find_package(OpenMP REQUIRED)
@@ -30,9 +37,10 @@ message("Current CMAKE_CXX_COMPILER (should show hipcc): " ${CMAKE_CXX_COMPILER}
 message("Current CMAKE_CXX_LINKER (should show hipcc): " ${CMAKE_CXX_LINKER})
 
 set(CMAKE_BUILD_TYPE Release)
+set(BUILD_CUDA ON)
 
 # Source files.
-set(CPP_SOURCES ${CMAKE_SOURCE_DIR}/toy.hip.cpp)
+set(CPP_SOURCES ${CMAKE_SOURCE_DIR}/kernels.hip.cpp ${CMAKE_SOURCE_DIR}/kernels.hip.h)
 message("CMAKE_SOURCE_DIR: " ${CMAKE_SOURCE_DIR})
 
 # Preparing the executable.
@@ -41,4 +49,5 @@ add_executable(test_clang ${CPP_SOURCES})
 
 # Link Libraries - HIP Device and OpenMP.
 #target_compile_options(test_vector_add PRIVATE ${OpenMP_CXX_FLAGS})
+target_include_directories(test_clang PRIVATE /opt/rocm-6.0.2/include/hipblas /opt/rocm-6.0.2/include/hipblaslt /opt/rocm-6.0.2/include/hipsparse /opt/rocm-6.0.2/include/hipcub)
 target_link_libraries(test_clang PRIVATE hip::device)
