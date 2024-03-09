@@ -1,1 +1,1 @@
-/opt/rocm-6.0.2/bin/hipcc -O3 -DNDEBUG CMakeFiles/test_clang.dir/kernels.hip.cpp.o -o test_clang  -Wl,-rpath,/opt/rocm-6.0.2/lib /opt/rocm-6.0.2/lib/libamdhip64.so.6.0.60002 --hip-link 
+/opt/rocm-6.0.2/bin/hipcc -O3 -DNDEBUG CMakeFiles/test_clang.dir/kernels.hip.cpp.o CMakeFiles/test_clang.dir/common.hip.cpp.o CMakeFiles/test_clang.dir/cpu_ops.hip.cpp.o CMakeFiles/test_clang.dir/ops.hip.cpp.o CMakeFiles/test_clang.dir/pythonInterface.hip.cpp.o -o test_clang  -Wl,-rpath,/opt/rocm-6.0.2/lib /opt/rocm-6.0.2/lib/libamdhip64.so.6.0.60002 --hip-link 

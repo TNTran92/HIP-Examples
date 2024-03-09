@@ -15,10 +15,11 @@
 #include <hip/hip_math_constants.h>
 #include <thrust/host_vector.h>
 #include <thrust/device_vector.h>
+#define __syncwarp __syncthreads //TODO: HIP doesn't have this so just sync threads
 
 # see https://github.com/ROCm/composable_kernel
 //#include <mma.h>
-#include <rocwmma/wmma.hpp>
+#include <rocwmma.hpp>
 
 #define HLF_MAX 65504
 #define TH 1024

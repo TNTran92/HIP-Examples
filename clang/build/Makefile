@@ -129,6 +129,54 @@ test_clang/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_clang.dir/build.make CMakeFiles/test_clang.dir/build
 .PHONY : test_clang/fast
 
+common.hip.o: common.hip.cpp.o
+.PHONY : common.hip.o
+
+# target to build an object file
+common.hip.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_clang.dir/build.make CMakeFiles/test_clang.dir/common.hip.cpp.o
+.PHONY : common.hip.cpp.o
+
+common.hip.i: common.hip.cpp.i
+.PHONY : common.hip.i
+
+# target to preprocess a source file
+common.hip.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_clang.dir/build.make CMakeFiles/test_clang.dir/common.hip.cpp.i
+.PHONY : common.hip.cpp.i
+
+common.hip.s: common.hip.cpp.s
+.PHONY : common.hip.s
+
+# target to generate assembly for a file
+common.hip.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_clang.dir/build.make CMakeFiles/test_clang.dir/common.hip.cpp.s
+.PHONY : common.hip.cpp.s
+
+cpu_ops.hip.o: cpu_ops.hip.cpp.o
+.PHONY : cpu_ops.hip.o
+
+# target to build an object file
+cpu_ops.hip.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_clang.dir/build.make CMakeFiles/test_clang.dir/cpu_ops.hip.cpp.o
+.PHONY : cpu_ops.hip.cpp.o
+
+cpu_ops.hip.i: cpu_ops.hip.cpp.i
+.PHONY : cpu_ops.hip.i
+
+# target to preprocess a source file
+cpu_ops.hip.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_clang.dir/build.make CMakeFiles/test_clang.dir/cpu_ops.hip.cpp.i
+.PHONY : cpu_ops.hip.cpp.i
+
+cpu_ops.hip.s: cpu_ops.hip.cpp.s
+.PHONY : cpu_ops.hip.s
+
+# target to generate assembly for a file
+cpu_ops.hip.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_clang.dir/build.make CMakeFiles/test_clang.dir/cpu_ops.hip.cpp.s
+.PHONY : cpu_ops.hip.cpp.s
+
 kernels.hip.o: kernels.hip.cpp.o
 .PHONY : kernels.hip.o
 
@@ -153,6 +201,54 @@ kernels.hip.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_clang.dir/build.make CMakeFiles/test_clang.dir/kernels.hip.cpp.s
 .PHONY : kernels.hip.cpp.s
 
+ops.hip.o: ops.hip.cpp.o
+.PHONY : ops.hip.o
+
+# target to build an object file
+ops.hip.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_clang.dir/build.make CMakeFiles/test_clang.dir/ops.hip.cpp.o
+.PHONY : ops.hip.cpp.o
+
+ops.hip.i: ops.hip.cpp.i
+.PHONY : ops.hip.i
+
+# target to preprocess a source file
+ops.hip.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_clang.dir/build.make CMakeFiles/test_clang.dir/ops.hip.cpp.i
+.PHONY : ops.hip.cpp.i
+
+ops.hip.s: ops.hip.cpp.s
+.PHONY : ops.hip.s
+
+# target to generate assembly for a file
+ops.hip.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_clang.dir/build.make CMakeFiles/test_clang.dir/ops.hip.cpp.s
+.PHONY : ops.hip.cpp.s
+
+pythonInterface.hip.o: pythonInterface.hip.cpp.o
+.PHONY : pythonInterface.hip.o
+
+# target to build an object file
+pythonInterface.hip.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_clang.dir/build.make CMakeFiles/test_clang.dir/pythonInterface.hip.cpp.o
+.PHONY : pythonInterface.hip.cpp.o
+
+pythonInterface.hip.i: pythonInterface.hip.cpp.i
+.PHONY : pythonInterface.hip.i
+
+# target to preprocess a source file
+pythonInterface.hip.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_clang.dir/build.make CMakeFiles/test_clang.dir/pythonInterface.hip.cpp.i
+.PHONY : pythonInterface.hip.cpp.i
+
+pythonInterface.hip.s: pythonInterface.hip.cpp.s
+.PHONY : pythonInterface.hip.s
+
+# target to generate assembly for a file
+pythonInterface.hip.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_clang.dir/build.make CMakeFiles/test_clang.dir/pythonInterface.hip.cpp.s
+.PHONY : pythonInterface.hip.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,9 +258,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test_clang"
+	@echo "... common.hip.o"
+	@echo "... common.hip.i"
+	@echo "... common.hip.s"
+	@echo "... cpu_ops.hip.o"
+	@echo "... cpu_ops.hip.i"
+	@echo "... cpu_ops.hip.s"
 	@echo "... kernels.hip.o"
 	@echo "... kernels.hip.i"
 	@echo "... kernels.hip.s"
+	@echo "... ops.hip.o"
+	@echo "... ops.hip.i"
+	@echo "... ops.hip.s"
+	@echo "... pythonInterface.hip.o"
+	@echo "... pythonInterface.hip.i"
+	@echo "... pythonInterface.hip.s"
 .PHONY : help
 
 

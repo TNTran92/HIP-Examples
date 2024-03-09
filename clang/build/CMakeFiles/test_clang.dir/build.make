@@ -83,18 +83,82 @@ CMakeFiles/test_clang.dir/kernels.hip.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_clang.dir/kernels.hip.cpp.s"
 	/opt/rocm-6.0.2/bin/hipcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rocm-user/project/HIP_example/HIP-Examples/clang/kernels.hip.cpp -o CMakeFiles/test_clang.dir/kernels.hip.cpp.s
 
+CMakeFiles/test_clang.dir/common.hip.cpp.o: CMakeFiles/test_clang.dir/flags.make
+CMakeFiles/test_clang.dir/common.hip.cpp.o: ../common.hip.cpp
+CMakeFiles/test_clang.dir/common.hip.cpp.o: CMakeFiles/test_clang.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rocm-user/project/HIP_example/HIP-Examples/clang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test_clang.dir/common.hip.cpp.o"
+	/opt/rocm-6.0.2/bin/hipcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_clang.dir/common.hip.cpp.o -MF CMakeFiles/test_clang.dir/common.hip.cpp.o.d -o CMakeFiles/test_clang.dir/common.hip.cpp.o -c /home/rocm-user/project/HIP_example/HIP-Examples/clang/common.hip.cpp
+
+CMakeFiles/test_clang.dir/common.hip.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_clang.dir/common.hip.cpp.i"
+	/opt/rocm-6.0.2/bin/hipcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rocm-user/project/HIP_example/HIP-Examples/clang/common.hip.cpp > CMakeFiles/test_clang.dir/common.hip.cpp.i
+
+CMakeFiles/test_clang.dir/common.hip.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_clang.dir/common.hip.cpp.s"
+	/opt/rocm-6.0.2/bin/hipcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rocm-user/project/HIP_example/HIP-Examples/clang/common.hip.cpp -o CMakeFiles/test_clang.dir/common.hip.cpp.s
+
+CMakeFiles/test_clang.dir/cpu_ops.hip.cpp.o: CMakeFiles/test_clang.dir/flags.make
+CMakeFiles/test_clang.dir/cpu_ops.hip.cpp.o: ../cpu_ops.hip.cpp
+CMakeFiles/test_clang.dir/cpu_ops.hip.cpp.o: CMakeFiles/test_clang.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rocm-user/project/HIP_example/HIP-Examples/clang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test_clang.dir/cpu_ops.hip.cpp.o"
+	/opt/rocm-6.0.2/bin/hipcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_clang.dir/cpu_ops.hip.cpp.o -MF CMakeFiles/test_clang.dir/cpu_ops.hip.cpp.o.d -o CMakeFiles/test_clang.dir/cpu_ops.hip.cpp.o -c /home/rocm-user/project/HIP_example/HIP-Examples/clang/cpu_ops.hip.cpp
+
+CMakeFiles/test_clang.dir/cpu_ops.hip.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_clang.dir/cpu_ops.hip.cpp.i"
+	/opt/rocm-6.0.2/bin/hipcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rocm-user/project/HIP_example/HIP-Examples/clang/cpu_ops.hip.cpp > CMakeFiles/test_clang.dir/cpu_ops.hip.cpp.i
+
+CMakeFiles/test_clang.dir/cpu_ops.hip.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_clang.dir/cpu_ops.hip.cpp.s"
+	/opt/rocm-6.0.2/bin/hipcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rocm-user/project/HIP_example/HIP-Examples/clang/cpu_ops.hip.cpp -o CMakeFiles/test_clang.dir/cpu_ops.hip.cpp.s
+
+CMakeFiles/test_clang.dir/ops.hip.cpp.o: CMakeFiles/test_clang.dir/flags.make
+CMakeFiles/test_clang.dir/ops.hip.cpp.o: ../ops.hip.cpp
+CMakeFiles/test_clang.dir/ops.hip.cpp.o: CMakeFiles/test_clang.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rocm-user/project/HIP_example/HIP-Examples/clang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test_clang.dir/ops.hip.cpp.o"
+	/opt/rocm-6.0.2/bin/hipcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_clang.dir/ops.hip.cpp.o -MF CMakeFiles/test_clang.dir/ops.hip.cpp.o.d -o CMakeFiles/test_clang.dir/ops.hip.cpp.o -c /home/rocm-user/project/HIP_example/HIP-Examples/clang/ops.hip.cpp
+
+CMakeFiles/test_clang.dir/ops.hip.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_clang.dir/ops.hip.cpp.i"
+	/opt/rocm-6.0.2/bin/hipcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rocm-user/project/HIP_example/HIP-Examples/clang/ops.hip.cpp > CMakeFiles/test_clang.dir/ops.hip.cpp.i
+
+CMakeFiles/test_clang.dir/ops.hip.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_clang.dir/ops.hip.cpp.s"
+	/opt/rocm-6.0.2/bin/hipcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rocm-user/project/HIP_example/HIP-Examples/clang/ops.hip.cpp -o CMakeFiles/test_clang.dir/ops.hip.cpp.s
+
+CMakeFiles/test_clang.dir/pythonInterface.hip.cpp.o: CMakeFiles/test_clang.dir/flags.make
+CMakeFiles/test_clang.dir/pythonInterface.hip.cpp.o: ../pythonInterface.hip.cpp
+CMakeFiles/test_clang.dir/pythonInterface.hip.cpp.o: CMakeFiles/test_clang.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rocm-user/project/HIP_example/HIP-Examples/clang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/test_clang.dir/pythonInterface.hip.cpp.o"
+	/opt/rocm-6.0.2/bin/hipcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_clang.dir/pythonInterface.hip.cpp.o -MF CMakeFiles/test_clang.dir/pythonInterface.hip.cpp.o.d -o CMakeFiles/test_clang.dir/pythonInterface.hip.cpp.o -c /home/rocm-user/project/HIP_example/HIP-Examples/clang/pythonInterface.hip.cpp
+
+CMakeFiles/test_clang.dir/pythonInterface.hip.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_clang.dir/pythonInterface.hip.cpp.i"
+	/opt/rocm-6.0.2/bin/hipcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rocm-user/project/HIP_example/HIP-Examples/clang/pythonInterface.hip.cpp > CMakeFiles/test_clang.dir/pythonInterface.hip.cpp.i
+
+CMakeFiles/test_clang.dir/pythonInterface.hip.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_clang.dir/pythonInterface.hip.cpp.s"
+	/opt/rocm-6.0.2/bin/hipcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rocm-user/project/HIP_example/HIP-Examples/clang/pythonInterface.hip.cpp -o CMakeFiles/test_clang.dir/pythonInterface.hip.cpp.s
+
 # Object files for target test_clang
 test_clang_OBJECTS = \
-"CMakeFiles/test_clang.dir/kernels.hip.cpp.o"
+"CMakeFiles/test_clang.dir/kernels.hip.cpp.o" \
+"CMakeFiles/test_clang.dir/common.hip.cpp.o" \
+"CMakeFiles/test_clang.dir/cpu_ops.hip.cpp.o" \
+"CMakeFiles/test_clang.dir/ops.hip.cpp.o" \
+"CMakeFiles/test_clang.dir/pythonInterface.hip.cpp.o"
 
 # External object files for target test_clang
 test_clang_EXTERNAL_OBJECTS =
 
 test_clang: CMakeFiles/test_clang.dir/kernels.hip.cpp.o
+test_clang: CMakeFiles/test_clang.dir/common.hip.cpp.o
+test_clang: CMakeFiles/test_clang.dir/cpu_ops.hip.cpp.o
+test_clang: CMakeFiles/test_clang.dir/ops.hip.cpp.o
+test_clang: CMakeFiles/test_clang.dir/pythonInterface.hip.cpp.o
 test_clang: CMakeFiles/test_clang.dir/build.make
 test_clang: /opt/rocm-6.0.2/lib/libamdhip64.so.6.0.60002
 test_clang: CMakeFiles/test_clang.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rocm-user/project/HIP_example/HIP-Examples/clang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_clang"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rocm-user/project/HIP_example/HIP-Examples/clang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable test_clang"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_clang.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -40,7 +40,7 @@ set(CMAKE_BUILD_TYPE Release)
 set(BUILD_CUDA ON)
 
 # Source files.
-set(CPP_SOURCES ${CMAKE_SOURCE_DIR}/kernels.hip.cpp ${CMAKE_SOURCE_DIR}/kernels.hip.h)
+set(CPP_SOURCES ${CMAKE_SOURCE_DIR}/kernels.hip.cpp ${CMAKE_SOURCE_DIR}/kernels.hip.h ${CMAKE_SOURCE_DIR}/common.hip.cpp ${CMAKE_SOURCE_DIR}/common.hip.h ${CMAKE_SOURCE_DIR}/cpu_ops.hip.cpp ${CMAKE_SOURCE_DIR}/cpu_ops.hip.h ${CMAKE_SOURCE_DIR}/ops.hip.cpp ${CMAKE_SOURCE_DIR}/ops.hip.h ${CMAKE_SOURCE_DIR}/pythonInterface.hip.cpp)
 message("CMAKE_SOURCE_DIR: " ${CMAKE_SOURCE_DIR})
 
 # Preparing the executable.
@@ -49,5 +49,5 @@ add_executable(test_clang ${CPP_SOURCES})
 
 # Link Libraries - HIP Device and OpenMP.
 #target_compile_options(test_vector_add PRIVATE ${OpenMP_CXX_FLAGS})
-target_include_directories(test_clang PRIVATE ${CMAKE_SOURCE_DIR} /opt/rocm-6.0.2/include/hipblas /opt/rocm-6.0.2/include/hipblaslt /opt/rocm-6.0.2/include/hipsparse /opt/rocm-6.0.2/include/hipcub /opt/rocm-6.0.2/include/rocwmaa)
+target_include_directories(test_clang PRIVATE ${CMAKE_SOURCE_DIR} /opt/rocm-6.0.2/include/hipblas /opt/rocm-6.0.2/include/hipblaslt /opt/rocm-6.0.2/include/hipsparse /opt/rocm-6.0.2/include/hipcub /opt/rocm-6.0.2/include/rocwmma)
 target_link_libraries(test_clang PRIVATE hip::device)
