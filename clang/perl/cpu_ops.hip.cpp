@@ -1,5 +1,3 @@
-
-#include <hip/hip_runtime.h>
 #include <BinSearch.h>
 #include <common.h>
 #include <thread>

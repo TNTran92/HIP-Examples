@@ -3,11 +3,9 @@
 // This source code is licensed under the MIT license found in the
 // LICENSE file in the root directory of this source tree.
 
-
-#include <hip/hip_runtime.h>
-#include <ops.cuh>
-#include <kernels.cuh>
-#include <cub/device/device_scan.cuh>
+#include "ops.hip.h"
+#include "kernels.hip.h"
+#include <hipcub/device/device_scan.cuh>
 #include <limits>
 #include <BinSearch.h>
 #include <cassert>
@@ -97,7 +95,7 @@ template<typename T, int DATA_TYPE> void dequantizeBlockwise(float *code, unsign
 //{
 //	int num_blocks = (colsB+32-1)/32;
 //	kMatmul_inference_4bit<NF4, half, half, half><<<num_blocks, 256>>>(A, B, out, lda, ldb, rowsA, colsA, colsB);
-//  CUDA_CHECK_RETURN(cudaPeekAtLastError());
+//  CUDA_CHECK_RETURN(hipPeekAtLastError());
 //}
 
 
