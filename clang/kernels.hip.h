@@ -6,7 +6,7 @@
 
 #include <hip/hip_runtime.h>
 #include <float.h>
-#include <ops.cuh>
+#include <ops.hip.h>
 
 #ifndef kernels
 #define kernels
