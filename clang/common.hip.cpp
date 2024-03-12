@@ -1,6 +1,6 @@
 
 #include <hip/hip_runtime.h>
-#include <common.h>
+#include <common.hip.h>
 #include <float.h>
 
 void quantize_block(const quantize_block_args& args) {
