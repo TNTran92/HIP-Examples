@@ -81,12 +81,12 @@ clean: CMakeFiles/test_clang.dir/clean
 CMakeFiles/test_clang.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_clang.dir/build.make CMakeFiles/test_clang.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_clang.dir/build.make CMakeFiles/test_clang.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rocm-user/project/HIP_example/HIP-Examples/clang/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target test_clang"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rocm-user/project/HIP_example/HIP-Examples/clang/build/CMakeFiles --progress-num=1,2 "Built target test_clang"
 .PHONY : CMakeFiles/test_clang.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_clang.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rocm-user/project/HIP_example/HIP-Examples/clang/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rocm-user/project/HIP_example/HIP-Examples/clang/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_clang.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rocm-user/project/HIP_example/HIP-Examples/clang/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_clang.dir/rule

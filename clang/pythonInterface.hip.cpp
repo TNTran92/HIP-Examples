@@ -11,7 +11,7 @@
 #if BUILD_MPS
 // #include <mps_ops.h>
 #endif
-#include <cpu_ops.h>
+#include <cpu_ops.hip.h>
 
 // We cannot call templated code from C, so we wrap the template in a C compatible call here if necessary.
 // We use macro functions to expand all the different optimizers. Looks ugly, and is ugly, but its better than to

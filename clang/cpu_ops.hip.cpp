@@ -1,7 +1,7 @@
 
 #include <hip/hip_runtime.h>
 #include <BinSearch.h>
-#include <common.h>
+#include <common.hip.h>
 #include <thread>
 
 using namespace BinSearch;
